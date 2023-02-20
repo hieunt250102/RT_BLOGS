@@ -601,13 +601,21 @@ footer {
             &--post {
                 flex: 50%;
             }
+
+            justify-content: center;
         }
     }
 
-    .content__header--title {
-        h1 {
-            font-size: 30px;
-            line-height: 43px;
+    .content {
+        &__header {
+            justify-content: space-evenly;
+
+            &--title {
+                h1 {
+                    font-size: 30px;
+                    line-height: 43px;
+                }
+            }
         }
     }
 }
@@ -638,10 +646,23 @@ footer {
             width: 45px;
             height: 45px;
         }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+
+    .navbar-container {
+        .hamburger-lines {
+            top: 5px;
+            height: 20px;
+            width: 30px;
+        }
     }
 
     .icon-search {
         display: block;
+        margin-left: 100px;
     }
 
     nav .menu-items li {
@@ -658,6 +679,14 @@ footer {
     .content {
         padding: 0px 40px 0px 40px;
 
+        &__header {
+            &--title {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
         &__grid {
             &--post {
                 flex: 50%;
@@ -667,12 +696,58 @@ footer {
     }
 }
 
-// @media (min-width: 769px) and (max-width: 1200px) {
-//     nav {
-//         display: block;
-//     }
+@media (min-width: 769px) and (max-width: 1200px) {
+    .logo {
+        margin-left: 50px;
 
-//     header {
-//         display: none;
-//     }
-// }
+        &__image {
+            height: 41px;
+            width: 41px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+
+    .header {
+        &__search {
+            input {
+                width: 150px;
+                font-size: 10px;
+            }
+        }
+
+        &__user{
+            margin-right: 30px;
+
+            &--account{
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .content {
+        padding: 0px 40px 0px 20px;
+
+        &__grid {
+            &--post {
+                flex: 100%;
+            }
+
+            justify-content: center;
+        }
+
+        &__header {
+            justify-content: space-evenly;
+
+            &--title {
+                h1 {
+                    font-size: 30px;
+                    line-height: 43px;
+                }
+            }
+        }
+
+    }
+}

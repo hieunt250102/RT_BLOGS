@@ -478,8 +478,14 @@ footer {
   .content {
     padding: 0px 40px 0px 20px;
   }
+  .content__grid {
+    justify-content: center;
+  }
   .content__grid--post {
     flex: 50%;
+  }
+  .content__header {
+    justify-content: space-evenly;
   }
   .content__header--title h1 {
     font-size: 30px;
@@ -508,8 +514,17 @@ footer {
     width: 45px;
     height: 45px;
   }
+  .logo__text {
+    font-size: 15px;
+  }
+  .navbar-container .hamburger-lines {
+    top: 5px;
+    height: 20px;
+    width: 30px;
+  }
   .icon-search {
     display: block;
+    margin-left: 100px;
   }
   nav .menu-items li {
     margin-bottom: 2.5rem;
@@ -523,9 +538,50 @@ footer {
   .content {
     padding: 0px 40px 0px 40px;
   }
+  .content__header--title h1 {
+    font-size: 20px;
+  }
   .content__grid--post {
     flex: 50%;
     width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .logo {
+    margin-left: 50px;
+  }
+  .logo__image {
+    height: 41px;
+    width: 41px;
+  }
+  .logo__text {
+    font-size: 15px;
+  }
+  .header__search input {
+    width: 150px;
+    font-size: 10px;
+  }
+  .header__user {
+    margin-right: 30px;
+  }
+  .header__user--account {
+    margin-left: 50px;
+  }
+  .content {
+    padding: 0px 40px 0px 20px;
+  }
+  .content__grid {
+    justify-content: center;
+  }
+  .content__grid--post {
+    flex: 100%;
+  }
+  .content__header {
+    justify-content: space-evenly;
+  }
+  .content__header--title h1 {
+    font-size: 30px;
+    line-height: 43px;
   }
 }
 
