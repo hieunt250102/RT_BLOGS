@@ -1,4 +1,4 @@
-var header = document.querySelector("header");
+let header = document.querySelector("header");
 document.addEventListener('scroll', function () {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         header.classList.remove('backInDown');
