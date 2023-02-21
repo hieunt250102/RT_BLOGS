@@ -1,0 +1,43 @@
+@keyframes backOutUp {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-700px) scale(0.7);
+        opacity: 0.7;
+    }
+}
+
+.backOutUp {
+    animation-name: backOutUp;
+    animation-duration: 3s;
+}
+
+.backInDown {
+    animation-name: backInDown;
+    animation-duration: 1s;
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
