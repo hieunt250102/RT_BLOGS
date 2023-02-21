@@ -35,6 +35,7 @@ body {
 
 nav {
     display: none;
+    position: relative;
 }
 
 .navbar-container {
@@ -145,6 +146,7 @@ nav {
 }
 
 .icon-search {
+    position: absolute;
     margin-left: 80px;
 
     i {
@@ -559,6 +561,10 @@ footer {
             width: 45px;
             height: 45px;
         }
+
+        &__text {
+            font-size: 15px;
+        }
     }
 
     .navbar-container input[type="checkbox"]:checked~.menu-items {
@@ -586,7 +592,8 @@ footer {
     .icon-search {
         width: 25px;
         display: block;
-        margin-left: 250px;
+        position: absolute;
+        margin-left: 350px;
     }
 
     .hero {
@@ -662,7 +669,6 @@ footer {
 
     .icon-search {
         display: block;
-        margin-left: 100px;
     }
 
     nav .menu-items li {
@@ -718,10 +724,10 @@ footer {
             }
         }
 
-        &__user{
+        &__user {
             margin-right: 30px;
 
-            &--account{
+            &--account {
                 margin-left: 50px;
             }
         }
@@ -734,8 +740,6 @@ footer {
             &--post {
                 flex: 100%;
             }
-
-            justify-content: center;
         }
 
         &__header {
@@ -751,3 +755,34 @@ footer {
 
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+    .icon-search {
+        position: absolute;
+        margin-left: 150px;
+    }
+
+    .logo {
+        position: absolute;
+        margin-left: 130px;
+        top: 0px;
+
+        &__image {
+            width: 31px;
+            height: 31px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+
+    .navbar-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+// @media screen (max-width: ){
+
+// }

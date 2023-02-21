@@ -29,6 +29,7 @@ body {
 
 nav {
   display: none;
+  position: relative;
 }
 
 .navbar-container {
@@ -114,6 +115,7 @@ nav {
 }
 
 .icon-search {
+  position: absolute;
   margin-left: 80px;
 }
 .icon-search i {
@@ -451,6 +453,9 @@ footer {
     width: 45px;
     height: 45px;
   }
+  .logo__text {
+    font-size: 15px;
+  }
   .navbar-container input[type=checkbox]:checked ~ .menu-items {
     transform: translateX(0);
   }
@@ -469,7 +474,8 @@ footer {
   .icon-search {
     width: 25px;
     display: block;
-    margin-left: 250px;
+    position: absolute;
+    margin-left: 350px;
   }
   .hero {
     background-image: url("./../images/banner_res.png");
@@ -524,7 +530,6 @@ footer {
   }
   .icon-search {
     display: block;
-    margin-left: 100px;
   }
   nav .menu-items li {
     margin-bottom: 2.5rem;
@@ -570,9 +575,6 @@ footer {
   .content {
     padding: 0px 40px 0px 20px;
   }
-  .content__grid {
-    justify-content: center;
-  }
   .content__grid--post {
     flex: 100%;
   }
@@ -582,6 +584,28 @@ footer {
   .content__header--title h1 {
     font-size: 30px;
     line-height: 43px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .icon-search {
+    position: absolute;
+    margin-left: 150px;
+  }
+  .logo {
+    position: absolute;
+    margin-left: 130px;
+    top: 0px;
+  }
+  .logo__image {
+    width: 31px;
+    height: 31px;
+  }
+  .logo__text {
+    font-size: 15px;
+  }
+  .navbar-container {
+    display: flex;
+    align-items: center;
   }
 }
 
