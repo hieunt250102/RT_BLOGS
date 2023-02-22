@@ -1,0 +1,145 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+    color: #000;
+    height: 122px;
+
+    input[type="checkbox"],
+    .hamburger-lines {
+        display: none;
+    }
+
+    &-container {
+        @include flex(flex, center, space-between, "");
+        margin-top: 30px;
+    }
+
+}
+
+nav {
+    display: none;
+}
+
+
+.menu-items {
+    order: 2;
+    display: flex;
+
+    li {
+        list-style: none;
+        margin: 0 0 0.5rem 1.5rem;
+        font-size: 1.2rem;
+
+        a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 102px;
+
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__image {
+        width: 61px;
+        height: 61px;
+    }
+}
+
+.header {
+    &__search {
+        display: flex;
+        align-items: center;
+
+        button {
+            position: relative;
+            margin-left: -40px;
+            cursor: pointer;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.65);
+        }
+
+        i {
+            color: #A7A7A7;
+            font-size: 24px;
+        }
+
+        input {
+            height: 45px;
+            width: 374px;
+            left: 286px;
+            top: 38px;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 212, 212, 1);
+            padding-left: 11px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-right: 104px;
+
+        &--option {
+            button {
+                color: rgba(255, 255, 255, 1);
+                width: 51px;
+                height: 31px;
+                background: #770303;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+                box-sizing: border-box;
+                margin-right: 27px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgba(33, 33, 33, 1);
+                left: 1038px;
+            }
+        }
+
+        &--account {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+
+            &-avatar {
+                img {
+                    height: 26px;
+                    width: 26px;
+                    background-color: rgba(255, 255, 255, 0.65);
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.icon-search {
+    margin-left: 80px;
+
+    i {
+        font-size: 20px;
+        color: rgba(167, 167, 167, 1);
+    }
+}
